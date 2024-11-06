@@ -1,0 +1,19 @@
+/* Applying the background gradient */
+.hero {
+    background: linear-gradient(135deg, #ff7e5f, #2f2f2f);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+  /* Gradient animation */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

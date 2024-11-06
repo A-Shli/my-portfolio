@@ -1,0 +1,16 @@
+#contact {
+    background-color: #fafafa;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  #contact p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  #contact p svg {
+    margin-right: 0.5rem;
+  }
+  

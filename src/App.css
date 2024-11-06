@@ -1,0 +1,42 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #ff6f61; /* Fun, vibrant color */
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+button.cta-button {
+  background-color: #ff6f61;
+  border: none;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+button.cta-button:hover {
+  background-color: #ff8f7a;
+}
+
+/* Global styles */
+section {
+  padding: 4rem 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
