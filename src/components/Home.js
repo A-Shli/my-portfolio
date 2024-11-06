@@ -1,13 +1,18 @@
 import React from 'react';
-import './Home.css'; // New custom CSS for the Home component
+import './Home.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
   return (
-    <section id="home">
-      <div className="hero-content">
-        <h1>Welcome to My Portfolio!</h1>
-        <p>I’m an aspiring software engineer with a love for creativity and code.</p>
-        <button className="cta-button">See My Work</button>
+    <section id="home" className="home-section">
+      <div className="home-content">
+        <h1 className="home-title">Hi, I'm Ala</h1>
+        <p className="home-subtitle">A curious developer on a journey to transform ideas into digital experiences, <br />ready to embrace challenges and grow with each line of code.</p>
+      </div>
+      <div className="scroll-prompt">
+        <p>Scroll down</p>
+        <FontAwesomeIcon icon={faArrowDown} className="scroll-icon" />
       </div>
     </section>
   );

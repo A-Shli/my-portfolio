@@ -1,19 +1,87 @@
-/* Applying the background gradient */
-.hero {
-    background: linear-gradient(135deg, #ff7e5f, #2f2f2f);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
+.home {
+  background: linear-gradient(135deg, #ff7e5f, #2f2f2f);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+.home-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(135deg, #595959, #b55b5b);
+  color: #ffffff;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+.home-content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.home-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-subtitle {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+.scroll-prompt {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.scroll-icon {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
-  
-  /* Gradient animation */
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  40% {
+    transform: translateY(-10px);
   }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+/* Gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
