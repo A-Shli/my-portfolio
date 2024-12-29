@@ -24,7 +24,7 @@ const projectsData = [
       title: 'Wordle WebApp',
       description: 'A game of wordle with a personal touch {JavaScript}',
       link: '#',
-      codeLink: 'https://github.com/yourusername/your-repo',
+      codeLink: 'https://github.com/A-Shli/Wordle',
     },
     {
       title: 'Patchwork',
